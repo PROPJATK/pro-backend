@@ -1,5 +1,6 @@
 const express = require('express');
 const { Int32 } = require('mongodb');
+const TravelModel = require('./travelSchema'); 
 const app = express();
 const port = 3000;
 
@@ -18,15 +19,6 @@ const mongoose = require("mongoose");
 
 const server = '127.0.0.1:27017';
 const database = 'TravelApp';
-
-const travelSchema = new mongoose.Schema({
-    name: String,
-    country_code: String,
-    // inne pola według potrzeb
-});
-
-// Tworzysz model dla kolekcji na podstawie schematu
-const TravelModel = mongoose.model('countries', travelSchema);
 
 
 class Database {
