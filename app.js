@@ -6,7 +6,7 @@ const port = 3000;
 
 // Dodaj endpoint do obsługi żądania GET na głównym adresie
 app.get('/', (req, res) => {
-    res.send('WILOCMEN');
+    res.send('WILCOMEN');
 });
 
 // Nasłuchuj na danym porcie

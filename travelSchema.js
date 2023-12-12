@@ -1,16 +1,12 @@
 const mongoose = require('mongoose');
 
-const opinionSchema = new mongoose.Schema({
-    text: String,
-});
-
 const hotelSchema = new mongoose.Schema({
     id: String,
     name: String,
     stars: Number,
     link: String,
     address: String,
-    opinions: [opinionSchema],
+    opinions: [String],
 });
 
 const restaurantSchema = new mongoose.Schema({
@@ -19,7 +15,7 @@ const restaurantSchema = new mongoose.Schema({
     cuisine: String,
     link: String,
     address: String,
-    opinions: [opinionSchema],
+    opinions: [String],
 });
 
 const attractionSchema = new mongoose.Schema({
@@ -27,7 +23,7 @@ const attractionSchema = new mongoose.Schema({
     name: String,
     link: String,
     address: String,
-    opinions: [opinionSchema],
+    opinions: [String],
 });
 
 const citySchema = new mongoose.Schema({
