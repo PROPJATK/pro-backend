@@ -1,0 +1,112 @@
+{
+    "_id": "609e5488b3b4a5a79085b82a",
+    "name": "Country1",
+    "image": "LINK COUNTRY 1",
+    "currency": "Dollar",
+    "population": 1000000,
+    "language": "English",
+    "cities": [
+      {
+        "id": "609e5488b3b4a5a79085b82c",
+        "name": "City1",
+        "description": "Beautiful city with historic landmarks",
+        "hotels": [
+          {
+            "id": "609e5488b3b4a5a79085b82d",
+            "name": "Hotel1",
+            "stars": 5,
+            "link": "https://example.com/hotel1",
+            "address": "123 Main Street"
+          },
+          {
+            "id": "609e5488b3b4a5a79085b82e",
+            "name": "Hotel2",
+            "stars": 4,
+            "link": "https://example.com/hotel2",
+            "address": "456 Oak Avenue"
+          }
+        ],
+        "restaurants": [
+          {
+            "id": "609e5488b3b4a5a79085b832",
+            "name": "Restaurant1",
+            "cuisine": "Italian",
+            "link": "https://example.com/restaurant1",
+            "address": "789 Elm Street"
+          },
+          {
+            "id": "609e5488b3b4a5a79085b833",
+            "name": "Restaurant2",
+            "cuisine": "Japanese",
+            "link": "https://example.com/restaurant2",
+            "address": "101 Pine Road"
+          }
+        ],
+        "attractions": [
+          {
+            "id": "609e5488b3b4a5a79085b836",
+            "name": "Attraction1",
+            "link": "https://example.com/attraction1",
+            "address": "555 Cedar Street"
+          },
+          {
+            "id": "609e5488b3b4a5a79085b837",
+            "name": "Attraction2",
+            "link": "https://example.com/attraction2",
+            "address": "666 Birch Avenue"
+          }
+        ]
+      },
+      {
+        "id": "609e5488b3b4a5a79085b82f",
+        "name": "City2",
+        "description": "Lively city with diverse culture",
+        "hotels": [
+          {
+            "id": "609e5488b3b4a5a79085b830",
+            "name": "Hotel3",
+            "stars": 3,
+            "link": "https://example.com/hotel3",
+            "address": "111 Maple Street"
+          },
+          {
+            "id": "609e5488b3b4a5a79085b831",
+            "name": "Hotel4",
+            "stars": 4,
+            "link": "https://example.com/hotel4",
+            "address": "222 Birch Avenue"
+          }
+        ],
+        "restaurants": [
+          {
+            "id": "609e5488b3b4a5a79085b834",
+            "name": "Restaurant3",
+            "cuisine": "Mexican",
+            "link": "https://example.com/restaurant3",
+            "address": "333 Cedar Street"
+          },
+          {
+            "id": "609e5488b3b4a5a79085b835",
+            "name": "Restaurant4",
+            "cuisine": "French",
+            "link": "https://example.com/restaurant4",
+            "address": "444 Oak Lane"
+          }
+        ],
+        "attractions": [
+          {
+            "id": "609e5488b3b4a5a79085b838",
+            "name": "Attraction3",
+            "link": "https://example.com/attraction3",
+            "address": "777 Pine Lane"
+          },
+          {
+            "id": "609e5488b3b4a5a79085b839",
+            "name": "Attraction4",
+            "link": "https://example.com/attraction4",
+            "address": "888 Cedar Avenue"
+          }
+        ]
+      }
+    ]
+  }

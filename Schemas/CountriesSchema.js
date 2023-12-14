@@ -1,12 +1,11 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const hotelSchema = new mongoose.Schema({
     id: String,
     name: String,
     stars: Number,
     link: String,
-    address: String,
-    opinions: [String],
+    address: String
 });
 
 const restaurantSchema = new mongoose.Schema({
@@ -14,16 +13,14 @@ const restaurantSchema = new mongoose.Schema({
     name: String,
     cuisine: String,
     link: String,
-    address: String,
-    opinions: [String],
+    address: String
 });
 
 const attractionSchema = new mongoose.Schema({
     id: String,
     name: String,
     link: String,
-    address: String,
-    opinions: [String],
+    address: String
 });
 
 const citySchema = new mongoose.Schema({
@@ -32,22 +29,19 @@ const citySchema = new mongoose.Schema({
     description: String,
     hotels: [hotelSchema],
     restaurants: [restaurantSchema],
-    attractions: [attractionSchema],
+    attractions: [attractionSchema]
 });
 
-const travelSchema = new mongoose.Schema({
-    _id: {
-        $oid: String,
-    },
+const countrySchema = new mongoose.Schema({
+    _id: String,
     name: String,
+    image: String,
     currency: String,
     population: Number,
     language: String,
-    cities: [citySchema],
+    cities: [citySchema]
 });
 
+const CountryModel = mongoose.model('Country', countrySchema);
 
-
-
-
-module.exports = mongoose.model('Country', travelSchema);
+module.exports = CountryModel;
