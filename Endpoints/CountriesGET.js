@@ -6,7 +6,7 @@ router.get('/countries', async (req, res) => {
     try {
         const documents = await TravelAppCountriesModel.find({},'name image -_id');
         res.send(documents);
-            } catch (error) {
+    } catch (error) {
         console.error('Error retrieving data from collection:', error);
         res.status(500).send('Internal Server Error');
     }
