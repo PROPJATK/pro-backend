@@ -8,6 +8,7 @@ const restaurantsGET = require('./Endpoints/RestaurantsGET')
 const hotelsGET = require('./Endpoints/HotelsGET')
 const countriesCitiesGET = require('./Endpoints/CitiesGET')
 const countryGET = require('./Endpoints/CountryGet')
+var cors = require('cors')
 
 const app = express()
 const port = 3000
@@ -43,6 +44,8 @@ app.use(restaurantsGET)
 app.use(hotelsGET)
 app.use(countriesCitiesGET)
 app.use(countryGET)
+
+app.use(cors())
 
 app.listen(port, () => {
   console.log(`Application works on port: ${port}`)
