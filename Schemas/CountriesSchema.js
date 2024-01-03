@@ -26,6 +26,7 @@ const attractionSchema = new mongoose.Schema({
 const citySchema = new mongoose.Schema({
     id: String,
     name: String,
+    image: String,
     description: String,
     hotels: [hotelSchema],
     restaurants: [restaurantSchema],

@@ -8,6 +8,7 @@ const restaurantsGET = require('./Endpoints/RestaurantsGET')
 const hotelsGET = require('./Endpoints/HotelsGET')
 const countriesCitiesGET = require('./Endpoints/CitiesGET')
 const countryGET = require('./Endpoints/CountryGet')
+const cityGET = require('./Endpoints/CityGET')
 var cors = require('cors')
 
 const app = express()
