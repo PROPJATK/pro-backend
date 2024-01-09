@@ -45,6 +45,7 @@ app.use(restaurantsGET)
 app.use(hotelsGET)
 app.use(countriesCitiesGET)
 app.use(countryGET)
+app.use(cityGET)
 
 app.use(cors())
 
